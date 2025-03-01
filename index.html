@@ -18,6 +18,7 @@
 
         .container {
             display: flex;
+            flex-wrap: wrap;
         }
 
         .left-column {
@@ -139,6 +140,12 @@
                 height: auto;
             }
 
+            /* Перше фото займає всю ширину на мобільних пристроях */
+            .first-photo {
+                width: 100%;
+                height: auto;
+            }
+
             /* Заголовки для мобільної версії - чорний */
             .content h1 {
                 color: #000000; /* Чорний колір для заголовків */
@@ -156,7 +163,7 @@
 <body>
     <div class="container">
         <div class="left-column">
-            <img src="https://maksymsharan.github.io/3/1990s.webp" alt="Вертикальне фото">
+            <img src="https://maksymsharan.github.io/3/1990s.webp" alt="Вертикальне фото" class="first-photo">
         </div>
 
         <div class="content">
