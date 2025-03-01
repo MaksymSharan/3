@@ -6,7 +6,7 @@
     <title>Кулуарні кланові сили</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-        
+
         /* Загальні стилі */
         body {
             margin: 0;
@@ -47,30 +47,32 @@
             border-radius: 12px;
             animation: fadeIn 0.8s ease-in-out;
         }
-        
-        /* Заголовок */
-        .content h1 {
-            text-align: center;
+
+        /* Друкарська машинка */
+        .typewriter {
+            font-family: 'Courier New', monospace;
             font-size: 28px;
-            font-weight: 700;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 4px solid black; /* Імітація курсора */
+            width: 0;
+            animation: typing 3s steps(30, end) forwards, blink 0.7s infinite;
+            text-align: center;
             margin-bottom: 20px;
-            opacity: 0;
-            animation: fadeInText 1s ease-in-out forwards 0.3s;
-            font-family: 'Courier New', Courier, monospace;
-            text-transform: uppercase;
-            letter-spacing: 1px;
         }
-        
-        /* Анімації */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+
+        /* Анімація друкарської машинки */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
         }
-        
-        @keyframes fadeInText {
-            from { opacity: 0; transform: scale(0.9); }
-            to { opacity: 1; transform: scale(1); }
+
+        /* Блимання курсора */
+        @keyframes blink {
+            50% { border-color: transparent; }
         }
+
     </style>
 </head>
 <body>
@@ -80,7 +82,7 @@
         </div>
 
         <div class="content">
-            <h1>Кланова боротьба за владу</h1>
+            <h1 class="typewriter">Кланова боротьба за владу</h1>
             <p>На руїнах радянської планової економіки в Україні 1990-х років розпочався переділ ресурсів, який визначив майбутнє політичного та економічного ландшафту країни. Головними гравцями цієї боротьби стали дві впливові групи — Донецький і Дніпропетровський клани.</p>
             <p>Перший, сформований на базі вугільної та металургійної промисловості Донбасу, спирався на величезні фінансові потоки та жорсткі методи ведення бізнесу. Другий — виріс із радянської номенклатури та оборонного комплексу, зберігаючи тісні зв’язки з Києвом. Протистояння між цими групами визначало політику держави протягом десятиліть, а їхні методи — від корупційних схем до відвертого криміналу — стали частиною пострадянської політичної культури.</p>
             <p>Як Донецьк і Дніпро поділили Україну? Чому саме ці два регіони стали центрами політичного впливу? І хто вийшов переможцем у цій затяжній боротьбі? Preambula вияснила ключові моменти цього протистояння та запрошує вас до прочитання матеріалу</p>
