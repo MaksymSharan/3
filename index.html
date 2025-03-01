@@ -18,12 +18,14 @@
             display: flex;
             flex-direction: column;
             height: 100vh;
+            overflow-x: hidden; /* Заборона горизонтального прокручування */
         }
 
         .container {
             display: flex;
             position: relative;
             width: 100%;
+            height: 100%;
         }
 
         /* Ліва колонка */
@@ -59,12 +61,12 @@
             position: absolute;
             top: 0;
             left: 100%;
-            width: 10%;
+            width: 5%;
             height: 100%;
             display: flex;
             flex-direction: column;
             gap: 5px;
-            margin-left: 20px;
+            margin-left: 15px;
         }
 
         .page {
@@ -120,10 +122,6 @@
 
             <!-- Блоки сторінок, що йдуть справа після тексту -->
             <div class="pages">
-                <div class="page"></div>
-                <div class="page"></div>
-                <div class="page"></div>
-                <div class="page"></div>
                 <div class="page"></div>
                 <div class="page"></div>
                 <div class="page"></div>
