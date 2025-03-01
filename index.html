@@ -52,93 +52,25 @@
             position: relative;
         }
 
-        /* Сторінки */
-        .page {
+        /* Сторінки (паралельно тексту, зліва) */
+        .pages {
             position: absolute;
             top: 0;
             left: 100%;
-            width: 5%;
+            width: 10%;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-left: 20px;
+        }
+
+        .page {
+            width: 100%;
+            height: 5%;
             background-color: #f0f0f0;
-            margin-left: 2px;
             box-shadow: -1px 0 4px rgba(0, 0, 0, 0.1);
             transform: skewY(-5deg);
-        }
-
-        .page:nth-child(2) {
-            left: 102%;
-        }
-
-        .page:nth-child(3) {
-            left: 104%;
-        }
-
-        .page:nth-child(4) {
-            left: 106%;
-        }
-
-        .page:nth-child(5) {
-            left: 108%;
-        }
-
-        .page:nth-child(6) {
-            left: 110%;
-        }
-
-        .page:nth-child(7) {
-            left: 112%;
-        }
-
-        .page:nth-child(8) {
-            left: 114%;
-        }
-
-        .page:nth-child(9) {
-            left: 116%;
-        }
-
-        .page:nth-child(10) {
-            left: 118%;
-        }
-
-        .page:nth-child(11) {
-            left: 120%;
-        }
-
-        .page:nth-child(12) {
-            left: 122%;
-        }
-
-        .page:nth-child(13) {
-            left: 124%;
-        }
-
-        .page:nth-child(14) {
-            left: 126%;
-        }
-
-        .page:nth-child(15) {
-            left: 128%;
-        }
-
-        .page:nth-child(16) {
-            left: 130%;
-        }
-
-        .page:nth-child(17) {
-            left: 132%;
-        }
-
-        .page:nth-child(18) {
-            left: 134%;
-        }
-
-        .page:nth-child(19) {
-            left: 136%;
-        }
-
-        .page:nth-child(20) {
-            left: 138%;
         }
 
         /* Друкарська машинка */
@@ -184,28 +116,28 @@
             <p>Але на другому терміні правління Кучми донбасятам вдалося зробити майже неможливе. Вони обіграли конкурентів, піднявши Віктора Януковича на політичний трон. От вам і черговий приклад того, як мільярди та амбіції перемагають будь-які принципи.</p>
             <p>Проте, коли Янукович у 2014 році ганебно втік під час Революції Гідності, клан пішов на дно разом із ним. Члени угруповання не зникли з радарів повністю — вони все ще добре відомі в Україні, але їхня "золота епоха" залишилася десь у пилюці політичної сцени. Історія, скажете? Та ні, справжній трилер із кримінальним душком і неприхованою іронією життя.</p>
 
-            <!-- Додано багато сторінок -->
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-            <div class="page"></div>
-
+            <!-- Блоки сторінок, що йдуть справа після тексту -->
+            <div class="pages">
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+            </div>
         </div>
     </div>
 </body>
